@@ -17,6 +17,7 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int score;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -28,6 +29,7 @@ public class TicketMachine
         price = cost;
         balance = 0;
         total = 0;
+        score = 0;
     }
 
     /**
@@ -36,6 +38,21 @@ public class TicketMachine
     public int getPrice()
     {
         return price;
+    }
+
+    public void setPrice(int cost)
+    { 
+        price=cost
+
+    }    
+
+    /**
+     * Increase score by the given number of points.
+     */
+    public void increase(int points)
+    {
+        score= score + points;
+
     }
 
     /**
@@ -55,6 +72,19 @@ public class TicketMachine
         balance = balance + amount;
     }
 
+    /**
+     * Reduce price by the given amount.
+     */
+    public void discount(int amount)
+    {
+        price= price - amount;
+    }
+    
+    public void prompt
+    {
+       System.out.println("Please insert the correct amount of money");
+    }   
+ 
     /**
      * Print a ticket.
      * Update the total collected and
