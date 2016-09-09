@@ -36,7 +36,7 @@ public void discount(int amount)
 ```
 System.out.println("My cat has green eyes.");
 ```
-
+My cat has green eyes.
 ## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output: 
 ```
 Please insert the correct amount of money.
