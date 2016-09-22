@@ -8,19 +8,22 @@ public void setPrice(int cost)
 ```
 Because it has method name and parameter type. constructors have the class name
 ## Complete the body of the `setPrice` method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
-
+public void setPrice(int cost)
+ {
+   price=cost;
+ }
 ## Complete the body of the following method, whose purpose is to add the value of its parameter to a field named `score`.
-```
+``` public void setPrice (int cost)
 /**
  * Increase score by the given number of points.
  */
 public void increase(int points)
 {
-  ...
+   score = score + points
 }
 ```
 ## Is the `increase` method in the previous question a mutator? If so, how could you demonstrate this?
-
+  It isnt a mutator because it isn't creating a new value.. it's just adding to the existing value.
 ## Complete the following method, whose purpose is to subtract the value of its parameter from a field named `price`. Add your new method to the `lab04-ticket-machine`.
 ```
 /**
@@ -28,7 +31,7 @@ public void increase(int points)
  */
 public void discount(int amount)
 {
-  ...
+  price + price - amount
 }
 ```
 
