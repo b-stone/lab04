@@ -80,7 +80,7 @@ public class TicketMachine
         price= price - amount;
     }
     
-    public void prompt
+    public void prompt()
     {
        System.out.println("Please insert the correct amount of money");
     }   
